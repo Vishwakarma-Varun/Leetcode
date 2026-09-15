@@ -7,5 +7,4 @@ class Solution:
             if score <= k:
                 return i
             i += 1
-        else:
-            return -1
+        return -1
