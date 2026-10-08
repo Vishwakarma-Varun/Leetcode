@@ -5,9 +5,9 @@
 #         self.next = next
 class Solution:
     def isPalindrome(self, head: ListNode | None) -> bool:
-        value = ""
+        value = []
         current = head
         while current:
-            value = value + str(current.val)
+            value.append(current.val)
             current = current.next
         return value == value[::-1]
