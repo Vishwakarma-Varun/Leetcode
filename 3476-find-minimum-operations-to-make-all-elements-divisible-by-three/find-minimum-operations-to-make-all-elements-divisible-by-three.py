@@ -3,8 +3,5 @@ class Solution:
         ans = 0
         for i in nums:
             if i % 3 != 0:
-                if (i-1) % 3 == 0:
-                    ans += 1
-                else:
-                    ans += 1
+                ans += 1
         return ans
