@@ -1,7 +1,8 @@
 class Solution:
     def minMoves(self, nums: List[int]) -> int:
         moves = 0
+        big = max(nums)
         for i in nums:
-            if i != max(nums):
-                moves += max(nums) - i
+            if i != big:
+                moves += big - i
         return moves
